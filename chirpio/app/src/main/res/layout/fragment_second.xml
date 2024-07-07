@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".SecondFragment">
+
+
+    <ImageView
+        android:id="@+id/ivcreateaccount"
+        android:layout_width="148dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvwelcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chirpio" />
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="170dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="98dp"
+        android:backgroundTint="#F8F3F3"
+        android:text="Create account"
+        android:textColor="#000000"
+
+        android:textColorHighlight="#FAF6F6"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etsignup_confirmpassword" />
+
+    <EditText
+        android:id="@+id/etsignup_displayname"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/text_background"
+        android:ellipsize="end"
+        android:ems="10"
+        android:hint="Enter name"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:textColor="#D4FC79"
+        android:textColorHint="#48FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/etsignup_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvwelcome" />
+
+    <EditText
+        android:id="@+id/etsignup_password"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="18dp"
+
+        android:background="@drawable/text_background"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:textColor="#D4FC79"
+        android:textColorHint="#48FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/etsignup_confirmpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etsignup_email" />
+
+    <TextView
+        android:id="@+id/tvwelcome"
+        android:layout_width="185dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="37dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Welcome,"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/etsignup_displayname"
+        app:layout_constraintEnd_toEndOf="@+id/ivcreateaccount"
+        app:layout_constraintTop_toBottomOf="@+id/ivcreateaccount" />
+
+    <EditText
+        android:id="@+id/etsignup_email"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="12dp"
+
+        android:background="@drawable/text_background"
+        android:ems="10"
+        android:hint="Enter email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:textColor="#D4FC79"
+        android:textColorHint="#48FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/etsignup_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etsignup_displayname" />
+
+    <EditText
+        android:id="@+id/etsignup_confirmpassword"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="84dp"
+
+        android:background="@drawable/text_background"
+        android:ems="10"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:textColor="#D4FC79"
+        android:textColorHint="#48FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnregister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etsignup_password" />
+</androidx.constraintlayout.widget.ConstraintLayout>

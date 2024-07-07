@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText">
+<!--    <solid android:color="#33000000" /> &lt;!&ndash; Semi-transparent color &ndash;&gt;-->
+    <corners android:radius="8dp" /> <!-- Border radius -->
+    <stroke
+        android:color="#2A000000"
+        android:width="7dp"/>
+</shape>

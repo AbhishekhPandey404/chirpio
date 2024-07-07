@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewPostFragment">
+
+
+    <EditText
+        android:id="@+id/edtpost"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="98dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/bg_semi_transparent_border"
+        android:ems="10"
+        android:hint="Enter Thought"
+        android:inputType="text"
+        android:textAlignment="4"
+        app:layout_constraintBottom_toTopOf="@+id/btn_post"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_post"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="274dp"
+        android:backgroundTint="#D4FC79"
+        android:text="Post"
+        android:textColor="@color/black"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edtpost"
+        app:layout_constraintTop_toBottomOf="@+id/edtpost" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

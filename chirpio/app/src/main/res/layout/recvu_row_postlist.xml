@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="8dp"
+    android:background="@color/white"
+    app:cardCornerRadius="8dp">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        app:cardCornerRadius="8dp">
+<!--        android:background="@drawable/layout_border"-->
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="horizontal|vertical|none"
+            android:padding="16dp"
+            app:cardCornerRadius="8dp"
+            android:background="@drawable/layout_border"> <!-- Add the background here -->
+
+            <TextView
+                android:id="@+id/tv_recvu_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Twix_tale"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_recvu_thought"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Your Thought"
+                android:textColor="#F3F3F3"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_recvu_username"
+                app:layout_constraintTop_toBottomOf="@+id/tv_recvu_date" />
+
+            <TextView
+                android:id="@+id/tv_recvu_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif"
+                android:text="Date"
+                android:textColor="#FAECEC"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_recvu_username"
+                app:layout_constraintTop_toBottomOf="@+id/tv_recvu_username" />
+
+
+            <Button
+                android:id="@+id/btnpostlistlikecount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="#D4FC79"
+                android:text="Like"
+
+                android:textColor="#000000"
+                android:textSize="13sp"
+                app:iconSize="5dp"
+                app:layout_constraintStart_toStartOf="@+id/tv_recvu_username"
+                app:layout_constraintTop_toBottomOf="@+id/tv_recvu_thought" />
+
+            <TextView
+                android:id="@+id/tv_postlistlikecount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="likes"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/btnpostlistlikecount"
+                app:layout_constraintStart_toEndOf="@+id/btnpostlistlikecount" />
+
+
+            <TextView
+                android:id="@+id/tvid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="48dp"
+                android:text="TextView"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_postlistlikecount"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_postlistlikecount"
+                app:layout_constraintTop_toTopOf="@+id/tv_postlistlikecount" />
+
+            <TextView
+                android:id="@+id/tv_post_id"
+                android:layout_width="406dp"
+                android:layout_height="0dp"
+                android:text="TextView"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

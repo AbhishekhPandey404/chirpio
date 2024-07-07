@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "116918991764",
+    "project_id": "chirpproject-dbd2b",
+    "storage_bucket": "chirpproject-dbd2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116918991764:android:81aa762d7d46bcf7e52d81",
+        "android_client_info": {
+          "package_name": "com.example.chirpio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116918991764-fkg5f16mmqh1t40cttrt3klel2m6l23m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDu21xMaKdpIMl_tNNFeVUoj_jWlCF7p_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116918991764-fkg5f16mmqh1t40cttrt3klel2m6l23m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
